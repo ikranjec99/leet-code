@@ -1,7 +1,8 @@
 #pragma once
 #include <vector>
 
-class Solution {
+class Solution 
+{
 public:
 	Solution();
 
