@@ -23,3 +23,24 @@ std::vector<int> Solution::twoSum(std::vector<int>& nums, int target)
 
 	return { };
 }
+
+void Solution::printResults(std::vector<int>& results)
+{
+	int last_element = results[results.size() - 1];
+
+	std::cout << "[";
+
+	for (const auto& n : results)
+	{
+		if (n != last_element)
+		{
+			std::cout << n << ", ";
+		}
+		else
+		{
+			std::cout << n;
+		}
+	}
+
+	std::cout << "]";
+}
