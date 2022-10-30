@@ -6,5 +6,5 @@ int main()
 	Solution* sln = new Solution();
 	std::string example = "words and 987";
 
-	std::cout << sln->myAtio(example);
+	std::cout << sln->myAtoi(example);
 }

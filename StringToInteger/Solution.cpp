@@ -3,7 +3,7 @@
 
 Solution::Solution() {}
 
-int Solution::myAtio(std::string s)
+int Solution::myAtoi(std::string s)
 {
 	int index = 0;
 	int length = Solution::numericalCharactersLength(s);
