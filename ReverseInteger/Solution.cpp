@@ -1,37 +1,27 @@
 #include "Solution.h"
 #include <math.h>
+#include <iostream>
 
 Solution::Solution() {};
 
 int Solution::reverse(int x)
 {
+	long number = abs(x);
+
+	long new_number = 0;
+
 	bool isNegative = x < 0;
 
-	int numberOfDigits = Solution::numberOfDigits(x);
-
-	int result = 1;
-
-	while (x > 0)
+	while (number)
 	{
-		x = x % 10;
-
-		result = result + x;
-
-		numberOfDigits--;
+		new_number = new_number * 10 + number % 10;
+		number /= 10;
 	}
 
-	return result;
-}
-
-int Solution::numberOfDigits(int x)
-{
-	int i = 0;
-
-	while (x > 0) 
+	if (new_number > INT_MAX)
 	{
-		x = x / 10;
-		i++;
-	} 
+		return 0;
+	}
 
-	return i;
+	return isNegative ? new_number * -1 : new_number;
 }

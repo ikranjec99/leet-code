@@ -5,5 +5,5 @@ int main()
 {
 	Solution* sln = new Solution();
 
-	std::cout << sln->reverse(2256);
+	std::cout << sln->reverse(1534236469);
 }

@@ -6,5 +6,4 @@ public:
 	Solution();
 
 	int reverse(int x);
-	int numberOfDigits(int x);
 };
